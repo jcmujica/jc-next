@@ -1,0 +1,46 @@
+[
+    {
+        "name": "HTML",
+        "src": "/assets/html.svg"
+    },
+    {
+        "name": "CSS",
+        "src": "/assets/css.svg"
+    },
+    {
+        "name": "Javascript",
+        "src": "/assets/javascript.svg"
+    },
+    {
+        "name": "Typescript",
+        "src": "/assets/typescript.svg"
+    },
+    {
+        "name": "Saas",
+        "src": "/assets/sass.svg"
+    },
+    {
+        "name": "Less",
+        "src": "/assets/less.svg"
+    },
+    {
+        "name": "React.js",
+        "src": "/assets/react.svg"
+    },
+    {
+        "name": "Next.js",
+        "src": "/assets/next.svg"
+    },
+    {
+        "name": "Node.js",
+        "src": "/assets/nodejs.svg"
+    },
+    {
+        "name": "Firebase",
+        "src": "/assets/firebase.svg"
+    },
+    {
+        "name": "Git",
+        "src": "/assets/git.svg"
+    }
+]

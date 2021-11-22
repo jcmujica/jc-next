@@ -1,26 +1,15 @@
-import Particles from "react-tsparticles";
 import React from 'react'
+import Particles from 'react-tsparticles';
 
 export const ParticlesComponent = () => {
-    const particlesInit = (main: any) => {
-        console.log(main);
-
-        // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    };
-
-    const particlesLoaded = (container: any) => {
-        console.log(container);
-    };
 
     return (
         <Particles
-            id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
+            id='tsparticles'
             options={{
                 background: {
                     color: {
-                        value: "transparent",
+                        value: 'transparent',
                     },
                 },
                 fpsLimit: 60,
@@ -28,11 +17,11 @@ export const ParticlesComponent = () => {
                     events: {
                         onClick: {
                             enable: true,
-                            mode: "push",
+                            mode: 'push',
                         },
                         onHover: {
                             enable: true,
-                            mode: "repulse",
+                            mode: 'repulse',
                         },
                         resize: true,
                     },
@@ -54,10 +43,10 @@ export const ParticlesComponent = () => {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: '#ffffff',
                     },
                     links: {
-                        color: "#ffffff",
+                        color: '#ffffff',
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
@@ -67,9 +56,9 @@ export const ParticlesComponent = () => {
                         enable: true,
                     },
                     move: {
-                        direction: "none",
+                        direction: 'none',
                         enable: true,
-                        outMode: "bounce",
+                        outMode: 'bounce',
                         random: false,
                         speed: 1,
                         straight: false,
@@ -85,7 +74,7 @@ export const ParticlesComponent = () => {
                         value: 0.1,
                     },
                     shape: {
-                        type: "circle",
+                        type: 'circle',
                     },
                     size: {
                         random: true,

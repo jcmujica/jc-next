@@ -7,6 +7,8 @@
     border-radius: 0;
     padding: 24px 36px;
     background: transparent;
+    z-index: 2;
+    transition: background 0.2s ease-in-out;
 }
 
 .navbar__list {
@@ -22,6 +24,10 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: #FFF;
+}
+
+.navbar__item a {
+    mix-blend-mode: difference;
 }
 
 .navbar__brand__link {

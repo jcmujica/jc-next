@@ -1,0 +1,85 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills h2 {
+    font-size: 2rem;
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-between;
+    grid-gap: 24px;
+    margin-top: 24px;
+}
+
+.skills__button {
+    background-color: var(--primary-color);
+    margin: 24px auto;
+    z-index: 1;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+}
+
+.card {
+    display: flex;
+    border: 1px solid #DDD;
+    width: 100%;
+    padding: 8px;
+    justify-content: space-around;
+    border-radius: 5px;
+    position:relative;
+    overflow:hidden;
+    z-index: 1;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card__animated:before {
+    animation: card-animation 1s ease-in-out;
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(315deg, rgb(101, 106, 197) 30%, hsla(221, 79%, 5%, 1) 100%);
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 40%;
+    animation: fill 1.5s ease-in-out;
+    z-index: -1;
+}
+
+@keyframes fill {
+    from {
+        top: 250px;
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        top: -50px;
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.card__name {
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: color 0.1s ease-in-out;
+    transition-delay: .1s;
+}
+
+.card__img {
+    width: 60px;
+}
+
+.card__animated > .card__name {
+    color: #FFF;
+}

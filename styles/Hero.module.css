@@ -1,11 +1,12 @@
 .hero {
-    background: linear-gradient(315deg, hsla(238, 52%, 27%, 1) 30%, hsla(221, 79%, 5%, 1) 100%);
+    background: linear-gradient(315deg, rgb(19, 22, 95) 30%, hsla(221, 79%, 5%, 1) 100%);
     padding: 20px;
     height: 100vh;
     display: grid;
     align-content: center;
     justify-content: center;
     grid-template-columns: 1fr;
+    overflow: hidden;
 }
 
 .hero__content {

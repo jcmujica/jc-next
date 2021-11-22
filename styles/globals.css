@@ -5,6 +5,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  --primary-color: #1e91d6;
+  --primary-dark: rgb(19, 22, 95);
 }
 
 a {
@@ -14,4 +17,22 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  padding: 60px 200px;
+}
+
+.underline {
+  width: 100%;
+  height: 2px;
+  background: var(--primary-color);
+  margin: 40px 0;
+}
+
+@media screen and (max-width: 960px) {
+  section {
+    padding: 60px;
+  }
 }

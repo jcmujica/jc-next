@@ -3,6 +3,8 @@ import Head from 'next/head'
 import { Footer } from 'components/Footer/Footer'
 import { Navbar } from 'components/Navbar/Navbar'
 import { Hero } from 'components/Sections/Hero/Hero'
+import { About } from 'components/About/About'
+import { Skills } from 'components/Skills/Skills'
 import styles from 'styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -16,6 +18,8 @@ const Home: NextPage = () => {
       <Navbar />
       <main className={styles.main}>
         <Hero />
+        <About />
+        <Skills />
       </main>
       <Footer />
     </>
