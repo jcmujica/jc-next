@@ -1,6 +1,6 @@
 .about {
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr;
     align-content: center;
     gap: 36px;
@@ -27,13 +27,50 @@
     background-image: url('../public/assets/avatar.png');
     background-size: cover;
     align-self: center;
+    justify-self: flex-end;
     z-index: 1;
 }
 
-@media screen and (max-width: 768px) {
+.about__selector {
+    z-index: 1;
+}
+
+.about__selector p {
+    margin-bottom: 0;
+}
+
+.about__button {
+    text-transform: capitalize;
+    background-color: var(--primary-color);
+    margin: 24px auto;
+    z-index: 1;
+    font-size: 1.2rem;
+    border: none;
+    margin-right: 16px;
+    z-index: 1;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.about__button__active {
+    text-transform: capitalize;
+    margin: 24px auto;
+    z-index: 1;
+    font-size: 1.2rem;
+    border: 2px solid var(--primary-color);
+    margin-right: 16px;
+    z-index: 1;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
     .about {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* grid-template-rows: auto 1fr; */
         gap: 24px;
     }
 
@@ -48,5 +85,9 @@
         grid-row: 1;
         grid-column: 1;
         margin: 0 auto;
+    }
+
+    .about__button, .about__button__active {
+        display: none;
     }
 }

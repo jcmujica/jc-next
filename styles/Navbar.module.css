@@ -39,3 +39,29 @@
     width: 30px;
     height: 30px;
 }
+
+.navbar__hamburger {
+    display: none;
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+.navbar__hamburger__line {
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+@media screen and (max-width: 960px) {
+    .navbar {
+        background: #fff;
+        padding: 16px;
+    }
+
+    .navbar__list {
+        display: none;
+    }
+}

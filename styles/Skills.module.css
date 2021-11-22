@@ -1,10 +1,13 @@
 .skills {
     display: flex;
     flex-direction: column;
+    background-color: #374151;
+    z-index: 2;
 }
 
 .skills h2 {
     font-size: 2rem;
+    color: #FFF;
 }
 
 .skills__list {
@@ -25,11 +28,13 @@
     color: #fff;
     font-weight: 700;
     border: none;
+    margin-top: 4rem;
 }
 
 .card {
     display: flex;
     border: 1px solid #DDD;
+    background-color: #FFF;
     width: 100%;
     padding: 8px;
     justify-content: space-around;
@@ -49,7 +54,8 @@
     position: absolute;
     width: 400px;
     height: 400px;
-    background: linear-gradient(315deg, rgb(101, 106, 197) 30%, hsla(221, 79%, 5%, 1) 100%);
+    /* background: linear-gradient(315deg, rgb(15, 150, 103) 30%, hsla(221, 79%, 5%, 1) 100%); */
+    background: linear-gradient(90deg,  rgba(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 100%);
     top: -30%;
     left: 50%;
     transform: translateX(-50%);

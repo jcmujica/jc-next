@@ -25,3 +25,27 @@
     font-weight: 400;
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "hero__content hero__content";
+    }
+
+    .hero__content {
+        grid-area: hero__content;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .hero__content h1 {
+        font-size: 3rem;
+    }
+
+    .hero__content h2 {
+        font-size: 2rem;
+    }
+    
+}

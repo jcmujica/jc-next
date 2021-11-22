@@ -29,7 +29,7 @@ export const Skills = () => {
 
     return (
         <section className={styles.skills}>
-            <h2>Skills</h2>
+            <h2>My skills</h2>
             <div className={styles.skills__list}>
                 {skills.map(skill => (
                     <Card
@@ -44,7 +44,7 @@ export const Skills = () => {
                 onClick={handleRandomize}
                 className={styles.skills__button}
             >
-                Randomize my Skills
+                Randomize 🎲
             </button>
         </section>
     )
