@@ -1,15 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from 'styles/Skills.module.css'
 
 interface ICardProps {
     name: string;
     src: string;
+    reset: number;
 }
 
 
 export const Card = (props: ICardProps) => {
     const [clicked, setClicked] = useState(false);
-    const { name = '', src = '/' } = props;
+    const { name = '', src = '/', reset } = props;
+
+    useEffect(() => {
+        setClicked(false);
+    }, [reset]);
 
     const handleClick = () => {
         setClicked(!clicked);

@@ -23,7 +23,7 @@
     grid-column: 2;
     border-radius: 50%;
     height: 200px;
-    width: 180px;
+    width: 200px;
     background-image: url('../public/assets/avatar.png');
     background-size: cover;
     align-self: center;

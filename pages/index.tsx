@@ -6,6 +6,7 @@ import { Hero } from 'components/Sections/Hero/Hero'
 import { About } from 'components/About/About'
 import { Skills } from 'components/Skills/Skills'
 import styles from 'styles/Home.module.css'
+import { Contact } from 'components/Contact/Contact'
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
         <Hero />
         <About />
         <Skills />
+        <Contact />
       </main>
       <Footer />
     </>

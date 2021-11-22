@@ -10,6 +10,7 @@ interface ISkill {
 
 export const Skills = () => {
     const [skills, setSkills] = useState<ISkill[] | []>([]);
+    const [resetValue, setResetValue] = useState(0);
 
     useEffect(() => {
         setSkills(skillsConstant);
@@ -18,7 +19,12 @@ export const Skills = () => {
     const handleRandomize = () => {
         const newSkills = [...skills];
         newSkills.sort(() => Math.random() - 0.5);
+        handleReset();
         setSkills(newSkills);
+    };
+
+    const handleReset = () => {
+        setResetValue(resetValue + 1);
     };
 
     return (
@@ -26,7 +32,12 @@ export const Skills = () => {
             <h2>Skills</h2>
             <div className={styles.skills__list}>
                 {skills.map(skill => (
-                    <Card key={skill.name} name={skill.name} src={skill.src} />
+                    <Card
+                        key={skill.name}
+                        name={skill.name}
+                        src={skill.src}
+                        reset={resetValue}
+                    />
                 ))}
             </div>
             <button
