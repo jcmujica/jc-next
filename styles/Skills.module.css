@@ -60,7 +60,7 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: 40%;
-    animation: fill 1.5s ease-in-out;
+    animation: fill 1s ease-in-out;
     z-index: -1;
 }
 
@@ -78,7 +78,7 @@
 .card__name {
     font-size: 1.5rem;
     font-weight: 400;
-    transition: color 0.1s ease-in-out;
+    transition: color 0.4s ease-in-out;
     transition-delay: .1s;
 }
 
