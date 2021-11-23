@@ -28,7 +28,7 @@ export const Skills = () => {
     };
 
     return (
-        <section className={styles.skills}>
+        <section className={styles.skills} id='skills'>
             <h2>My skills</h2>
             <div className={styles.skills__list}>
                 {skills.map(skill => (

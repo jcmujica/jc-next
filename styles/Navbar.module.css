@@ -26,10 +26,6 @@
     color: #FFF;
 }
 
-.navbar__item a {
-    mix-blend-mode: difference;
-}
-
 .navbar__brand__link {
     color: #fff;
     text-decoration: none;

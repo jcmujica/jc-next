@@ -4,7 +4,7 @@ import projectsList from 'constants/projects.json'
 
 export const Projects = () => {
     return (
-        <section className={styles.projects} >
+        <section className={styles.projects} id='projects'>
             <h2>My projects</h2>
             <div className={styles.projects__container}>
                 {projectsList.map((project, index) => {

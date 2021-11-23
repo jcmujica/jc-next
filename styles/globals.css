@@ -20,7 +20,7 @@ a {
   box-sizing: border-box;
 }
 
-section {
+section, footer {
   width: 100%;
   padding: 60px 300px;
 }
@@ -32,8 +32,15 @@ section {
   margin: 40px 0;
 }
 
+@media screen and (max-width: 1120px) {
+  section, footer {
+    padding: 60px 150px;
+  }
+}
+
+
 @media screen and (max-width: 960px) {
-  section {
+  section, footer {
     padding: 60px;
   }
 }
