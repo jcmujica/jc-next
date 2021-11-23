@@ -11,12 +11,10 @@ export const Navbar = () => {
             backgroundColor: scrolled ? 'rgba(19, 22, 95, 0.9)' : 'transparent'
         }} >
             <span className={styles.navbar__brand}>
-                <a href="/" className={styles.navbar__brand__link}>
-                    <img src="/assets/jc-blue.png"
-                        alt="logo"
-                        className={styles.navbar__brand__logo}
-                    />
-                </a>
+                <img src="/assets/jc-blue.png"
+                    alt="logo"
+                    className={styles.navbar__brand__logo}
+                />
             </span>
             <ul className={styles.navbar__list}>
                 <li className={styles.navbar__item}>

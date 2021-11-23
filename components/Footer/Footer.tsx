@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from 'styles/Footer.module.css';
-import contactLinks from 'constants/contact.json';
+import styles from 'styles/Footer.module.css'
+import contactLinks from 'constants/contact.json'
 
 export const Footer = () => {
 
@@ -8,14 +8,16 @@ export const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.footer__right}>
                 <div className={styles.footer__links}>
-                    {contactLinks.map((link: any) => (
-                        <div className={styles.footer__item}>
+                    {contactLinks.map((link, i) => (
+                        <div key={`footer-${i}`} className={styles.footer__item}>
                             <a href={link.url}
                                 className={styles.footer__link}
                             >
                                 <img src={link.img}
                                     alt={link.name}
                                     className={styles.footer__img}
+                                    width='40px'
+                                    height='40px'
                                 />
                                 <span>{link.name}</span>
                             </a>

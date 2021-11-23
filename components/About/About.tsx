@@ -14,17 +14,17 @@ export const About = () => {
         switch (length) {
             case LENGTH.SHORT:
                 return (
-                    <p>I'm a front end developer born in Venezuela 🇻🇪 but currently living in Santiago, Chile 🇨🇱.</p>
+                    <p>{'I\'m a front end developer born in Venezuela 🇻🇪 but currently living in Santiago, Chile 🇨🇱.'}</p>
                 )
             case LENGTH.MEDIUM:
                 return (
-                    <p>I'm a front end developer born in Venezuela 🇻🇪 but currently living in Santiago, Chile 🇨🇱. I have a passion for clean architecture in the front end and component reusability.</p>
+                    <p>{'I\'m a front end developer born in Venezuela 🇻🇪 but currently living in Santiago, Chile 🇨🇱. I have a passion for clean architecture in the front end and component reusability.'}</p>
                 )
             case LENGTH.LONG:
                 return (
                     <>
-                        <p>I'm a front end developer born in Venezuela 🇻🇪 but currently living in Santiago, Chile 🇨🇱. I have a passion for clean architecture in the front end and component reusability.</p>
-                        <p>I work moslty with React.js ⚛️ and Javascript 🧑‍💻 but I'm always eager to work with and learn new technologies to implement them in my projects.</p>
+                        <p>{'I\'m a front end developer born in Venezuela 🇻🇪 but currently living in Santiago, Chile 🇨🇱. I have a passion for clean architecture in the front end and component reusability.'}</p>
+                        <p>{'I work moslty with React.js ⚛️ and Javascript 🧑‍💻 but I\'m always eager to work with and learn new technologies to implement them in my projects.'}</p>
                     </>
                 )
             default:
