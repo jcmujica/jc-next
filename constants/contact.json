@@ -1,5 +1,10 @@
 [
     {
+        "url": "https://github.com/jcmujica",
+        "name": "Github",
+        "img": "/assets/github.svg"
+    },
+    {
         "url": "https://www.linkedin.com/in/jcmujica/",
         "name": "Linkedin",
         "img": "/assets/linkedin.svg"
