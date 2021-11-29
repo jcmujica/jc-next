@@ -1,10 +1,5 @@
 [
     {
-        "name": "React and morty",
-        "url": "https://react-and-morty.netlify.app/",
-        "description": "The first app I ever built using react when I started learning (2019)"
-    },
-    {
         "name": "React calendar",
         "url": "https://react-daily-calendar.netlify.app/",
         "description": "My first complex react app, a google calendar clone (2020)"
