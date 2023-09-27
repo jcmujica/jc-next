@@ -16,12 +16,11 @@ export const Hero = () => {
           </h2>
         </div>
         <Image
-          src={'/assets/profile-picture.png'}
+          src={'/assets/profile-picture.webp'}
           alt="JC Mujica"
           width={200}
           height={200}
           className={styles.hero__image}
-          blurDataURL='/assets/profile-picture.png'
         />
       </div>
       <ParticlesComponent />
