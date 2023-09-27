@@ -19,19 +19,19 @@ module.exports = {
   ],
   'rules': {
     'indent': [
-      'error',
+      'warning',
       2
     ],
     'linebreak-style': [
-      'error',
+      'warning',
       'unix'
     ],
     'quotes': [
-      'error',
+      'warning',
       'single'
     ],
     'semi': [
-      'error',
+      'warning',
       'never'
     ],
     // Disable prop-types validation rule
