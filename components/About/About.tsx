@@ -20,14 +20,14 @@ export const About = () => {
         return (
           <>
             <p>{'Hello, I\'m JC Mujica, a passionate front-end developer originally from Venezuela 🇻🇪, currently residing in the vibrant city of Santiago, Chile 🇨🇱. My journey in web development is fueled by a relentless pursuit of clean architecture and the art of creating highly reusable components in the front end.'}</p>
-            <p>{'My toolbox primarily consists of React.js ⚛️ and JavaScript 🧑‍💻, but I\'m constantly excited to explore and embrace new technologies that can enhance the experiences I craft in my projects. With over [5+ years] of hands-on experience, I bring a wealth of knowledge in creating intuitive and dynamic user interfaces.'}</p>
+            <p>{'My toolbox primarily consists of React.js ⚛️ and Javascript 🧑‍💻, but I\'m constantly excited to explore and embrace new technologies that can enhance the experiences I craft in my projects. With over [5+ years] of hands-on experience, I bring a wealth of knowledge in creating intuitive and dynamic user interfaces.'}</p>
           </>
         )
       case LENGTH_VALUES.LONG:
         return (
           <>
             <p>{'Hello, I\'m JC Mujica, a passionate front-end developer originally from Venezuela 🇻🇪, currently residing in the vibrant city of Santiago, Chile 🇨🇱. My journey in web development is fueled by a relentless pursuit of clean architecture and the art of creating highly reusable components in the front end.'}</p>
-            <p>{'My toolbox primarily consists of React.js ⚛️ and JavaScript 🧑‍💻, but I\'m constantly excited to explore and embrace new technologies that can enhance the experiences I craft in my projects. With over [5+ years] of hands-on experience, I bring a wealth of knowledge in creating intuitive and dynamic user interfaces.'}</p>
+            <p>{'My toolbox primarily consists of React.js ⚛️ and Javascript 🧑‍💻, but I\'m constantly excited to explore and embrace new technologies that can enhance the experiences I craft in my projects. With over [5+ years] of hands-on experience, I bring a wealth of knowledge in creating intuitive and dynamic user interfaces.'}</p>
             <p>{'Let\'s embark on a journey of innovation and creativity together. Feel free to explore my portfolio and discover the magic of web development through my eyes.'}</p>
           </>
         )

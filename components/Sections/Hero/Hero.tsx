@@ -21,6 +21,7 @@ export const Hero = () => {
           width={200}
           height={200}
           className={styles.hero__image}
+          blurDataURL='/assets/profile-picture.png'
         />
       </div>
       <ParticlesComponent />

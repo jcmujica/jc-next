@@ -21,6 +21,9 @@ export const Navbar = () => {
                     <a href="#about" className={styles.navbar__link}>About</a>
                 </li>
                 <li className={styles.navbar__item}>
+                    <a href="#experience" className={styles.navbar__link}>Experience</a>
+                </li>
+                <li className={styles.navbar__item}>
                     <a href="#skills" className={styles.navbar__link}>Skills</a>
                 </li>
                 <li className={styles.navbar__item}>

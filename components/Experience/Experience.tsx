@@ -1,6 +1,6 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-import { IoLogoJavascript } from "react-icons/io";
-import { DiReact } from "react-icons/di";
+import { IoLogoJavascript } from "react-icons/io"
+import { DiReact } from "react-icons/di"
 import styles from 'styles/Experience.module.css'
 import 'react-vertical-timeline-component/style.min.css'
 
@@ -25,7 +25,7 @@ const JOBS = [
     position: 'Software Engineer',
     company: 'Trajectory Inc.',
     date: '2018 - 2020',
-    description: 'Javascript developer for Netsuitee ERP.',
+    description: 'Javascript developer for Oracle Netsuite ERP.',
     icon: <IoLogoJavascript />,
     iconStyle: { background: '#f7df1e', color: '#000' }
   }
@@ -33,8 +33,11 @@ const JOBS = [
 
 export const Experience = () => {
   return (
-    <section className={styles.container}>
-      <h2>Experience</h2>
+    <section
+      className={styles.container}
+      id='experience'
+    >
+      <h2>My experience</h2>
       <VerticalTimeline
         layout='1-column-left'
       >
@@ -49,7 +52,15 @@ export const Experience = () => {
             icon={job.icon}
           >
             <h3 className='vertical-timeline-element-title'>{job.position}</h3>
-            <h4 className='vertical-timeline-element-subtitle'>{job.company}</h4>
+            <h4
+              className='vertical-timeline-element-subtitle'
+              style={{
+                color: '#2c2c2c',
+                opacity: 0.5
+              }}
+            >
+              {job.company}
+            </h4>
             <p>{job.description}</p>
           </VerticalTimelineElement>
         ))}

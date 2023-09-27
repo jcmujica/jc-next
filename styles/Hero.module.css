@@ -14,7 +14,7 @@
   margin: 0 auto;
   color: #fff;
   display: flex;
-  gap: 20px;
+  gap: 60px;
 }
 
 .hero__image {
@@ -49,13 +49,20 @@
     grid-area: hero__content;
     align-self: center;
     justify-self: center;
+    flex-direction: column;
+  }
+
+  .hero__image {
+    margin: 0 auto;
   }
 
   .hero__content h1 {
     font-size: 3rem;
+    text-align: center;
   }
 
   .hero__content h2 {
     font-size: 2rem;
+    text-align: center;
   }
 }

@@ -62,7 +62,7 @@ export const ParticlesComponent = () => {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "rgba(255, 255, 255, 0.1)",
             },
             links: {
               color: "#ffffff",
@@ -86,7 +86,7 @@ export const ParticlesComponent = () => {
                 enable: true,
                 area: 9600,
               },
-              value: 180,
+              value: 80,
             },
             opacity: {
               value: 0.5,
