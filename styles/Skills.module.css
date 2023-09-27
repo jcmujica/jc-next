@@ -1,7 +1,7 @@
 .skills {
     display: flex;
     flex-direction: column;
-    background-color: #374151;
+    background-color: #67a9eb;
     z-index: 2;
 }
 

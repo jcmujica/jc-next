@@ -1,59 +1,62 @@
 import { useState } from 'react'
 import styles from 'styles/About.module.css'
 
-const LENGTH = {
-    SHORT: 'shorter',
-    MEDIUM: 'medium',
-    LONG: 'longer'
+const LENGTH_VALUES = {
+  SHORT: 'shorter',
+  MEDIUM: 'medium',
+  LONG: 'longer'
 }
 
 export const About = () => {
-    const [length, setLength] = useState(LENGTH.LONG);
+  const [length, setLength] = useState(LENGTH_VALUES.SHORT)
 
-    const handleLength = (length: string) => {
-        switch (length) {
-            case LENGTH.SHORT:
-                return (
-                    <p>{'I\'m a front end developer born in Venezuela 🇻🇪 but currently living in Santiago, Chile 🇨🇱.'}</p>
-                )
-            case LENGTH.MEDIUM:
-                return (
-                    <p>{'I\'m a front end developer born in Venezuela 🇻🇪 but currently living in Santiago, Chile 🇨🇱. I have a passion for clean architecture in the front end and component reusability.'}</p>
-                )
-            case LENGTH.LONG:
-                return (
-                    <>
-                        <p>{'I\'m a front end developer born in Venezuela 🇻🇪 but currently living in Santiago, Chile 🇨🇱. I have a passion for clean architecture in the front end and component reusability.'}</p>
-                        <p>{'I work mostly with React.js ⚛️ and Javascript 🧑‍💻 but I\'m always eager to work with and learn new technologies to implement them in my projects.'}</p>
-                    </>
-                )
-            default:
-                break;
-        }
+  const handleLength = (length: string) => {
+    switch (length) {
+      case LENGTH_VALUES.SHORT:
+        return (
+          <p>{'Hello, I\'m JC Mujica, a passionate front-end developer originally from Venezuela 🇻🇪, currently residing in the vibrant city of Santiago, Chile 🇨🇱. My journey in web development is fueled by a relentless pursuit of clean architecture and the art of creating highly reusable components in the front end.'}</p>
+        )
+      case LENGTH_VALUES.MEDIUM:
+        return (
+          <>
+            <p>{'Hello, I\'m JC Mujica, a passionate front-end developer originally from Venezuela 🇻🇪, currently residing in the vibrant city of Santiago, Chile 🇨🇱. My journey in web development is fueled by a relentless pursuit of clean architecture and the art of creating highly reusable components in the front end.'}</p>
+            <p>{'My toolbox primarily consists of React.js ⚛️ and JavaScript 🧑‍💻, but I\'m constantly excited to explore and embrace new technologies that can enhance the experiences I craft in my projects. With over [5+ years] of hands-on experience, I bring a wealth of knowledge in creating intuitive and dynamic user interfaces.'}</p>
+          </>
+        )
+      case LENGTH_VALUES.LONG:
+        return (
+          <>
+            <p>{'Hello, I\'m JC Mujica, a passionate front-end developer originally from Venezuela 🇻🇪, currently residing in the vibrant city of Santiago, Chile 🇨🇱. My journey in web development is fueled by a relentless pursuit of clean architecture and the art of creating highly reusable components in the front end.'}</p>
+            <p>{'My toolbox primarily consists of React.js ⚛️ and JavaScript 🧑‍💻, but I\'m constantly excited to explore and embrace new technologies that can enhance the experiences I craft in my projects. With over [5+ years] of hands-on experience, I bring a wealth of knowledge in creating intuitive and dynamic user interfaces.'}</p>
+            <p>{'Let\'s embark on a journey of innovation and creativity together. Feel free to explore my portfolio and discover the magic of web development through my eyes.'}</p>
+          </>
+        )
+      default:
+        break
     }
+  }
 
-    const handleLengthChange = (length: string) => {
-        setLength(length);
-    }
+  const handleLengthChange = (length: string) => {
+    setLength(length)
+  }
 
-    return (
-        <section className={styles.about} id='about'>
-            <div className={styles.about__content}>
-                <h2>About me</h2>
-                {handleLength(length)}
-            </div>
-            <div className={styles.about__avatar} />
-            <div className={styles.about__selector}>
-                {Object.values(LENGTH).map(key => (
-                    <button
-                        key={key}
-                        onClick={() => handleLengthChange(key)}
-                        className={length === key ? styles.about__button__active : styles.about__button}
-                    >
-                        {key}
-                    </button>
-                ))}
-            </div>
-        </section>
-    )
-};
+  return (
+    <section className={styles.about} id='about'>
+      <div className={styles.about__content}>
+        <h2>About me</h2>
+          {handleLength(length)}
+      </div>
+      <div className={styles.about__selector}>
+        {Object.values(LENGTH_VALUES).map(key => (
+          <button
+            key={key}
+            onClick={() => handleLengthChange(key)}
+            className={`${length === key ? styles.about__button__active : styles.about__button}`}
+          >
+            {key}
+          </button>
+        ))}
+      </div>
+    </section>
+  )
+}

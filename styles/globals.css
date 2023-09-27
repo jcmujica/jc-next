@@ -5,10 +5,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
-  --primary-color: #1e91d6;
+  font-size: 16px;
+  --primary-color: #139aed;
   --primary-dark: rgb(19, 22, 95);
   scroll-behavior: smooth;
+  color: #2c2c2c;
 }
 
 a {

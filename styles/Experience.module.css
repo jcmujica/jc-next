@@ -1,0 +1,9 @@
+.container {
+  background-color: var(--primary-dark);
+}
+
+.container > h2 {
+  color: #FFF;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
