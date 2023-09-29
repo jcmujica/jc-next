@@ -16,8 +16,8 @@
         "src": "/assets/typescript.svg"
     },
     {
-        "name": "Saas",
-        "src": "/assets/sass.svg"
+        "name": "Stripe",
+        "src": "/assets/stripe.svg"
     },
     {
         "name": "React Query",
