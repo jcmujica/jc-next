@@ -6,7 +6,7 @@ import 'react-vertical-timeline-component/style.min.css'
 
 const JOBS = [
   {
-    position: 'Fontend Tech Lead',
+    position: 'Frontend Tech Lead',
     company: 'FZ Sports',
     date: '2023 - Present',
     description: 'Leading frontend development for FZ Sports streaming services web platform.',
