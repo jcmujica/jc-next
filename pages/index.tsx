@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>JC Mujica - Front end developer</title>
+        <title>JC Mujica - Frontend developer</title>
         <meta name="description" content="JC Mujica: Experienced Frontend Developer & React.js Specialist | 5+ Years of Expertise | Skilled in Node.js Backend Development | Explore My Portfolio for Stunning Web Apps and Interfaces." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
