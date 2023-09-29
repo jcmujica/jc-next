@@ -10,5 +10,11 @@
         "url": "https://www.sisspa.cl/",
         "description": "An HTML, CSS and JS website with contact form intergration built for SISSPA",
         "image": "/assets/sisspa.png"
+    },
+    {
+        "name": "Human IDs",
+        "url": "https://www.npmjs.com/package/human-ids",
+        "description": "An open source npm package that generates human readable ids",
+        "image": "/assets/human-ids.png"
     }
 ]
