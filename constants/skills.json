@@ -20,8 +20,8 @@
         "src": "/assets/sass.svg"
     },
     {
-        "name": "Less",
-        "src": "/assets/less.svg"
+        "name": "React Query",
+        "src": "/assets/react-query.svg"
     },
     {
         "name": "React.js",
@@ -42,5 +42,25 @@
     {
         "name": "Git",
         "src": "/assets/git.svg"
+    },
+    {
+      "name": "React Native",
+      "src": "/assets/react.svg"
+    },
+    {
+      "name": "MongoDB",
+      "src": "/assets/mongodb.svg"
+    },
+    {
+      "name": "Redux",
+      "src": "/assets/redux.svg"
+    },
+    {
+      "name": "Less",
+      "src": "/assets/less.svg"
+    },
+    {
+      "name": "Strapi",
+      "src": "/assets/strapi.svg"
     }
 ]

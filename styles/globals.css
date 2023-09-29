@@ -9,7 +9,7 @@ body {
   --primary-color: #139aed;
   --primary-dark: rgb(19, 22, 95);
   scroll-behavior: smooth;
-  color: #2c2c2c;
+  overflow-x: hidden;
 }
 
 a {
@@ -21,7 +21,8 @@ a {
   box-sizing: border-box;
 }
 
-section, footer {
+section,
+footer {
   width: 100%;
   padding: 60px 300px;
 }
@@ -34,14 +35,15 @@ section, footer {
 }
 
 @media screen and (max-width: 1120px) {
-  section, footer {
+  section,
+  footer {
     padding: 60px 150px;
   }
 }
 
-
 @media screen and (max-width: 960px) {
-  section, footer {
+  section,
+  footer {
     padding: 60px;
   }
 }

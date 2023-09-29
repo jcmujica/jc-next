@@ -42,6 +42,8 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  align-items: center;
+  min-height: 100px;
 }
 
 .card:hover {
@@ -49,12 +51,12 @@
 }
 
 .card__animated:before {
-  animation: card-animation 1s ease-in-out;
+  animation: card-animation .2s ease-in-out;
   content: "";
   position: absolute;
   width: 400px;
   height: 400px;
-  background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(2, 0, 36, 1) 100%);
+  background: linear-gradient(-90deg, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 70%, rgba(2, 0, 36, 1) 100%);
   top: -30%;
   left: 50%;
   transform: translateX(-50%);
@@ -75,10 +77,12 @@
 }
 
 .card__name {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   transition: color 0.4s ease-in-out;
   transition-delay: 0.1s;
+  text-align: center;
+  margin: 0;
 }
 
 .card__img {
