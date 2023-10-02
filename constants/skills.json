@@ -8,6 +8,14 @@
         "src": "/assets/css.svg"
     },
     {
+      "name": "Less",
+      "src": "/assets/less.svg"
+    },
+    {
+      "name": "Sass",
+      "src": "/assets/sass.svg"
+    },
+    {
         "name": "Javascript",
         "src": "/assets/javascript.svg"
     },
