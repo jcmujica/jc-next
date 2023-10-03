@@ -45,8 +45,16 @@ export const Experience = () => {
           <VerticalTimelineElement
             key={job.position}
             className='vertical-timeline-element--work'
-            contentStyle={{ background: '#fff', color: '#2c2c2c' }}
-            contentArrowStyle={{ borderRight: '7px solid  #fff' }}
+            contentStyle={{
+              background: 'rgba(255, 255, 255, 0.7)',
+              backdropFilter: 'blur(10px)',
+              boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+              border: '1px solid rgba(255, 255, 255, 0.3)',
+              color: '#2c2c2c'
+            }}
+            contentArrowStyle={{
+              borderRight: '7px solid rgba(255, 255, 255, 0.5)',
+            }}
             date={job.date}
             iconStyle={job.iconStyle}
             icon={job.icon}
