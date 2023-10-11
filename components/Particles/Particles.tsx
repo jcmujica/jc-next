@@ -7,12 +7,6 @@ import styles from 'styles/Particles.module.css'
 export const ParticlesComponent = () => {
 
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine)
-
-    // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    //await loadFull(engine);
     await loadSlim(engine)
   }, [])
 
@@ -34,7 +28,7 @@ export const ParticlesComponent = () => {
             },
           },
           fullScreen: {
-            zIndex: 0,
+            zIndex: -1,
             enable: false
           },
           fpsLimit: 80,
@@ -84,9 +78,10 @@ export const ParticlesComponent = () => {
             number: {
               density: {
                 enable: true,
-                area: 9600,
+                area: 6400,
               },
               value: 80,
+              limit: 20,
             },
             opacity: {
               value: 0.5,
